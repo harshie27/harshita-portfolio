@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harshita Mehra | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body { scroll-behavior: smooth; }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(120deg,#0b67a4,#247ab4,#085d96);
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: bold;
+        }
+
+        .hero p { opacity: 0.9; }
+
+        /* TITLES */
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            width: 60px;
+            height: 4px;
+            background: #a338c1;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        /* CARDS */
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        /* ABOUT IMAGE */
+        .profile-img {
+            border-radius: 50%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        /* CONTACT */
+        .contact-box {
+            background: #faf6ff;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #329997;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Harshita Mehra</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero text-center">
+    <div class="container">
+        <h1>Hello, I'm Harshita Mehra</h1>
+        <p class="lead">Web Developer • PCB Designer • ECE student</p>
+        <a href="#projects" class="btn btn-light btn-lg mt-3 shadow">View My Work</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title">About Me</h2>
+
+        <div class="row align-items-center mt-4">
+
+            <div class="col-md-5 text-center mb-4 mb-md-0">
+                <img src="profile.jpeg" class="img-fluid profile-img" style="max-width:280px;">
+            </div>
+
+            <div class="col-md-7">
+                <p class="fs-5">
+                    I am an Electronics and Communication Engineering student passionate about coding, web development, and modern technologies. 
+                    I love learning new skills, building creative projects, and transforming ideas into real digital solutions. 
+                    My goal is to grow in the IT field and create impactful technology that solves real-world problems.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">My Projects</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm">
+                    <h5 class="fw-bold">🔥 Fire Detecting Robot</h5>
+                    <p>A robot that detects fire using sensors and alerts users instantly, improving safety and early response.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm">
+                    <h5 class="fw-bold">🔐 Laser Security System</h5>
+                    <p>A laser-based security system that activates an alarm when the beam is interrupted, useful for home protection.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-box mx-auto" style="max-width:500px;">
+            <p><i class="bi bi-person"></i> <strong>Harshita Mehra</strong></p>
+            <p><i class="bi bi-envelope"></i> harshitamehra46@gmail.com</p>
+            <p><i class="bi bi-telephone"></i> 9770658481</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-3 text-center">
+    <p class="mb-0"> 2026 Harshita Mehra • Portfolio Website</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
